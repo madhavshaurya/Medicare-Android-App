@@ -1,0 +1,289 @@
+<!--activity_historyedit.xml-->
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Personal Information -->
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create/Modify Medical Record"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/raleway_medium"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal Information"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Full Name -->
+        <EditText
+            android:id="@+id/idEdtFullName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Full Name"
+            android:importantForAccessibility="yes"
+            android:inputType="textPersonName"
+            android:layout_marginTop="8dp" />
+
+        <!-- Date of Birth -->
+        <EditText
+            android:id="@+id/idEdtDateOfBirth"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Date of Birth"
+            android:importantForAccessibility="yes"
+            android:inputType="none"
+            android:focusable="false"
+            android:clickable="true"
+            android:layout_marginTop="8dp" />
+
+        <!-- Gender -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <RadioGroup
+            android:id="@+id/idRadioGroupGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/idRadioMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:layout_marginTop="8dp" />
+
+            <RadioButton
+                android:id="@+id/idRadioFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:layout_marginTop="8dp" />
+
+            <RadioButton
+                android:id="@+id/idRadioOther"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other"
+                android:layout_marginTop="8dp" />
+
+        </RadioGroup>
+
+        <!-- Contact Information -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Information"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <!-- Phone Number -->
+        <EditText
+            android:id="@+id/idEdtPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:layout_marginTop="8dp" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/idEdtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="8dp" />
+
+        <!-- Address -->
+        <EditText
+            android:id="@+id/idEdtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Address"
+            android:layout_marginTop="8dp" />
+
+        <!-- Emergency Contact -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emergency Contact"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <!-- Emergency Contact Name -->
+        <EditText
+            android:id="@+id/idEdtEmergencyName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Emergency Contact Name"
+            android:layout_marginTop="8dp" />
+
+        <!-- Relationship -->
+        <EditText
+            android:id="@+id/idEdtRelationship"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Relationship"
+            android:layout_marginTop="8dp" />
+
+        <!-- Emergency Phone Number -->
+        <EditText
+            android:id="@+id/idEdtEmergencyPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Emergency Phone Number"
+            android:inputType="phone"
+            android:layout_marginTop="8dp" />
+
+        <!-- Medical History -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medical History"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <!-- Checkboxes for Medical History -->
+        <CheckBox
+            android:id="@+id/idChkAllergies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Allergies"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/idChkAsthma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Asthma"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/idChkDiabetes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diabetes"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/idChkHeartDisease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heart Disease"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/idChkHighBloodPressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High Blood Pressure"
+            android:layout_marginTop="8dp" />
+
+        <!-- Other Medical History -->
+        <EditText
+            android:id="@+id/idEdtOtherMedicalHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Other Medical History"
+            android:layout_marginTop="8dp" />
+
+        <!-- List any current medications -->
+        <EditText
+            android:id="@+id/idEdtCurrentMedications"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="List any current medications"
+            android:layout_marginTop="8dp" />
+
+        <!-- Have you had any surgeries in the past? -->
+        <EditText
+            android:id="@+id/idEdtPastSurgeries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Have you had any surgeries in the past? If yes, please specify"
+            android:layout_marginTop="8dp" />
+
+        <!-- Do you have any chronic conditions? -->
+        <EditText
+            android:id="@+id/idEdtChronicConditions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Do you have any chronic conditions? If yes, please specify"
+            android:layout_marginTop="8dp" />
+
+        <!-- Current Symptoms / Reason for Visit -->
+        <EditText
+            android:id="@+id/idEdtCurrentSymptoms"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Current Symptoms / Reason for Visit"
+            android:layout_marginTop="16dp" />
+
+        <!-- Are you currently experiencing any pain? -->
+        <EditText
+            android:id="@+id/idEdtPainDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Are you currently experiencing any pain? If yes, please describe the type and location"
+            android:layout_marginTop="8dp" />
+
+        <!-- Additional Information -->
+        <EditText
+            android:id="@+id/idEdtAdditionalInformation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Additional Information"
+            android:layout_marginTop="8dp" />
+
+        <!-- Consent -->
+        <CheckBox
+            android:id="@+id/idChkConsent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By submitting this form, I confirm..."
+            android:textSize="14sp"
+            android:layout_marginTop="16dp" />
+
+        <!-- Button for adding data to Firebase -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/idBtnSendData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Medical Form"
+            android:fontFamily="@font/raleway_medium"
+            android:textAllCaps="false"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+</ScrollView>
+

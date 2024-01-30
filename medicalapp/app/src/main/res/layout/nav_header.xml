@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="#76c352"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/nav_header_profile_image"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/default_profile_photo"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/nav_header_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="John Doe"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/nav_header_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="johndoe@example.com"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+</LinearLayout>

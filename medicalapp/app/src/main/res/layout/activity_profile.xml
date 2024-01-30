@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ProfileActivity">
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textAlignment="center"
+        android:fontFamily="@font/raleway_medium"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:layout_marginTop="30dp" />
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/default_profile_photo"/>
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:id="@+id/fullNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Full Name"
+        android:textAlignment="center"
+        android:inputType="text"
+        android:enabled="false"
+        android:focusable="false"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/dobEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Date of Birth"
+        android:textAlignment="center"
+        android:inputType="date"
+        android:enabled="false"
+        android:focusable="false"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/phoneNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textAlignment="center"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:enabled="false"
+        android:focusable="false"
+        android:layout_marginBottom="16dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:id="@+id/editButton"
+        android:background="@drawable/button_background"
+        android:layout_width="150dp"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/raleway_medium"
+        android:text="Edit Profile"/>
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="About us\n\nVersion: 1.0\n\n\nEmail: support@medicare.com"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/logoutButton"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/raleway_medium"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>

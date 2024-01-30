@@ -1,0 +1,27 @@
+<!-- res/layout/activity_about_us.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AboutUsActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:fontFamily="@font/raleway_medium"
+        android:textSize="24sp"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to our medical app. We are dedicated to providing you with the best healthcare services."
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
